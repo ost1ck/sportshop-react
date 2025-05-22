@@ -1,0 +1,36 @@
+/* src/assets/styleFirst.module.css */
+.photoSection {
+  position: relative;
+  background-image: url('/photo.png');
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.photoSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+body.light .photoSection::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body.dark .photoSection::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: -20px;
+}

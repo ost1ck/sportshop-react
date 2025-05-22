@@ -1,0 +1,37 @@
+/* src/components/WishlistButton.module.css */
+.wishlistButton {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #f472b6, #a855f7); /* Рожево-фіолетовий градієнт */
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.wishlistButton:hover {
+  background: linear-gradient(to right, #ec4899, #9333ea); /* Темніший градієнт при наведенні */
+  transform: scale(1.02); /* Легке збільшення при наведенні */
+}
+
+.wishlistButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(168, 85, 247, 0.5); /* Фокус для доступності */
+}
+
+.wishlistButton:disabled {
+  background: #d1d5db; /* Сірий фон для відключеної кнопки */
+  cursor: not-allowed;
+  transform: none; /* Відміна ефекту scale для відключеної кнопки */
+}
+
+.inWishlist {
+  background: #6b7280; /* Сірий фон, коли товар у списку */
+}
+
+.inWishlist:hover {
+  background: #6b7280; /* Залишаємо той самий сірий фон при наведенні */
+  transform: none; /* Відміна ефекту scale */
+}

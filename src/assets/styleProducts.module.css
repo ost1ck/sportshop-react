@@ -1,0 +1,234 @@
+.filterButton {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #CEBC7C;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+
+.filterButton:hover {
+    background-color: #95713F;
+    transform: scale(1.1);
+}
+
+.filterButton:active {
+    background-color: #004085;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.productCard {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.productCard img {
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.productCard p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.price {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #95713F;
+    font-weight: normal;
+}
+
+.productCard p.price {
+    color: #95713F;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #CEBC7C;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.rating {
+    margin-top: 8px;
+    font-size: 18px;
+    color: #FFD700;
+}
+
+.productCard .availability {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #28a745;
+    font-weight: normal;
+}
+
+.productCard .availability.outOfStock {
+    color: #dc3545;
+}
+
+.description {
+    display: none;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.toggleDescription {
+    cursor: pointer;
+    color: #555;
+    text-decoration: underline;
+    font-weight: normal;
+    background: none;
+    border: none;
+    margin-top: 10px;
+    display: block;
+    width: 100%;
+}
+
+.addToCart {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #CEBC7C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    display: block;
+    width: 100%;
+}
+
+.addToCart:hover {
+    background-color: #95713F;
+    transform: scale(1.1);
+}
+
+.addToCart:active {
+    background-color: #004085;
+}
+
+.addToCart:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.addToCart[data-in-cart="true"] {
+    background-color: #28a745;
+    cursor: default;
+    transform: none;
+}
+
+@media (max-width: 768px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* src/assets/styleProducts.module.css */
+.products {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .filterButton {
+    display: block;
+    margin: 20px auto;
+    background-color: #CEBC7C;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  body.light .filterButton {
+    color: #fff;
+  }
+  
+  body.dark .filterButton {
+    background-color: #95713F;
+    color: #e0e0e0;
+  }
+  
+  .filterButton:hover {
+    background-color: #95713F;
+  }
+  
+  body.dark .filterButton:hover {
+    background-color: #CEBC7C;
+  }
+  
+  /* Додаємо стилі для селекту */
+  .sortSelect {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin-right: 10px;
+  }
+  
+  body.dark .sortSelect {
+    background-color: #2c2c2c;
+    border-color: #555;
+    color: #fff;
+  }
+  
+  .sortSelect:focus {
+    outline: none;
+    border-color: #CEBC7C;
+  }
+  
+  body.dark .sortSelect:focus {
+    border-color: #95713F;
+  }

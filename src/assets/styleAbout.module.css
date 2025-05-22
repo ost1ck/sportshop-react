@@ -1,0 +1,122 @@
+/* src/assets/styleAbout.module.css */
+.aboutUs {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    line-height: 1.7;
+  }
+  
+  body.light .aboutUs {
+    background-color: #fefefe;
+    color: #333;
+  }
+  
+  body.dark .aboutUs {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+  }
+  
+  .aboutUs h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body.light .aboutUs h2 {
+    color: #121212;
+  }
+  
+  body.dark .aboutUs h2 {
+    color: #e0e0e0;
+  }
+  
+  .aboutUs h3 {
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 2px solid #95713F;
+    padding-bottom: 10px;
+  }
+  
+  body.light .aboutUs h3 {
+    color: #95713F;
+  }
+  
+  body.dark .aboutUs h3 {
+    color: #CEBC7C;
+  }
+  
+  .aboutUs p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  body.light .aboutUs p {
+    color: #444;
+  }
+  
+  body.dark .aboutUs p {
+    color: #ccc;
+  }
+  
+  .aboutUs ul {
+    padding-left: 20px;
+    list-style-type: disc;
+  }
+  
+  .aboutUs ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  body.light .aboutUs ul li {
+    color: #444;
+  }
+  
+  body.dark .aboutUs ul li {
+    color: #ccc;
+  }
+  
+  .aboutUs .mission {
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.light .aboutUs .mission {
+    background-color: #F0E5D8;
+  }
+  
+  body.dark .aboutUs .mission {
+    background-color: #444;
+  }
+  
+  .aboutUs .mission h3 {
+    font-size: 24px;
+  }
+  
+  body.light .aboutUs .mission h3 {
+    color: #121212;
+  }
+  
+  body.dark .aboutUs .mission h3 {
+    color: #e0e0e0;
+  }
+  
+  .aboutUs .mission p {
+    font-size: 20px;
+  }
+  
+  body.light .aboutUs .mission p {
+    color: #555;
+  }
+  
+  body.dark .aboutUs .mission p {
+    color: #bbb;
+  }
